@@ -1,18 +1,27 @@
-# Salesforce DX Project: Next Steps
+# Exercise-Dev
+* Data Model/Objects
+* Trigger
+* LWC
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## Installation instructions
+1. Authorize an Org
+2. Right click force-app/ & Deploy Source to Org
 
-## How Do You Plan to Deploy Your Changes?
+## Change List
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+| Metadata Entity | Object                                 | Change Type | Details |   |
+|-----------------|----------------------------------------|-------------|---------|---|
+| CustomObject    | Payments__c                            | Create      |         |   |
+| CustomObject    | Project__c                             | Create      |         |   |
+| CustomObject    | Contact                                | Update      |         |   |
+| CustomField     | Project__c.Total_Amount_of_Payments__c | Create      |         |   |
+| CustomField     | Contact.Total_Amount_of_Payments__c    | Create      |         |   |
+| App             | Project_Payments                       | Create      |         |   |
+| Tab             | Payments__c                            | Create      |         |   |
+| Tab             | Project__c                             | Create      |         |   |
 
-## Configure Your Salesforce DX Project
+## Deployment Tasks
+### Pre-installation
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+### Post-installation
+* Assign a Profile to the Project_Payments App.

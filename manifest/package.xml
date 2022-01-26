@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
+		<members>Project__c.Project_Compact_Layout_PP</members>
+		<members>Payments__c.Payment_Compact_Layout_PP</members>
+		<name>CompactLayout</name>
+	</types>
+	<types>
 		<members>Project_Payments</members>
 		<name>CustomApplication</name>
 	</types>
@@ -27,6 +32,11 @@
 	<types>
 		<members>Project_Payments_UtilityBar</members>
 		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>Payments__c-Payment Layout</members>
+		<members>Project__c-Project Layout</members>
+		<name>Layout</name>
 	</types>
 	<types>
 		<members>Contact.Contact_Payments</members>

@@ -15,6 +15,7 @@
     <tabs>Project__c</tabs>
     <tabs>standard-Account</tabs>
     <tabs>standard-report</tabs>
+    <tabs>Contact_Payments</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Project_Payments_UtilityBar</utilityBar>
 </CustomApplication>
